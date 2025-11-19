@@ -1,3 +1,9 @@
+all: native
+native:
+	mkdir -p build
+	shards install
+	CRYSTAL_WORKERS=$(nproc) crystal build src/castblock.cr --release -o build/castblock
+
 docker-all: docker docker-arm docker-aarch64
 
 docker-arm:
