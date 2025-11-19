@@ -45,9 +45,12 @@ Most environment variables are optional as can be seen, more info on what they d
 
 ### From source
 
-You need to install [go-chromecast](https://github.com/vishen/go-chromecast) first, and to make it available in your PATH.
-Then you need a working Crystal environment and run `shards build --release`.
-The binary is in `./bin/castblock`.
+1. Install [go-chromecast](https://github.com/vishen/go-chromecast),
+2. make it available in your PATH.
+3. You need a working Crystal environment,
+4. run `shards build --release`, or `make`.
+   - The binary is in `./bin/castblock` if ran with shards,
+   - or `build/castblock` if ran with make.
 
 ## Usage
 
